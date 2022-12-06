@@ -1,0 +1,27 @@
+{
+  "name": "lab4-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "npm install && cd client && npm install && cd ..",
+    "build-run": "cd client && node ./node_modules/@angular/cli/bin/ng build && cd .. && node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "mongoose": "^6.7.2",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
